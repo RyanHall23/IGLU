@@ -12,14 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.iglu.ui.travelers.TravelersFragment"
+        android:id="@+id/nav_tvlrCreate"
+        android:name="com.example.iglu.ui.travelers.TravelersCreateFragment"
         android:label="@string/menu_travelers"
-        tools:layout="@layout/fragment_travelers" />
+        tools:layout="@layout/fragment_create_travelers" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_itinerary"
         android:name="com.example.iglu.ui.itinerary.ItineraryFragment"
         android:label="@string/menu_itinerary"
         tools:layout="@layout/fragment_itinerary" />
+
+    <fragment
+        android:id="@+id/nav_tvlrAll"
+        android:name="com.example.iglu.ui.travelers.TravelersAllFragment"
+        android:label="fragment_all_travelers"
+        tools:layout="@layout/fragment_all_travelers" />
 </navigation>

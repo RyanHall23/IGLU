@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.travelers.TravelersFragment">
+    tools:context=".ui.travelers.TravelersCreateFragment">
 
     <TextView
         android:id="@+id/forenameTextView"
@@ -122,10 +122,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment android:id="@+id/autoCompleteFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <fragment
+        android:id="@+id/autoCompleteFragment"
         android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="211dp"
+        android:layout_height="31dp"
         android:layout_marginStart="150dp"
         android:layout_marginTop="300dp"
         android:ems="10"
@@ -170,5 +171,16 @@
         android:layout_marginTop="400dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tvlrSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
