@@ -28,10 +28,6 @@ class TravelersFragment : Fragment() {
         _binding = FragmentTravelersBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        travelersViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
